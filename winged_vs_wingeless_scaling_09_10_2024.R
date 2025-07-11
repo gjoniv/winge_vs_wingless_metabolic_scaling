@@ -18,7 +18,19 @@ setwd('~/Dropbox/insects/input/')
 dataset <- read.csv("your_dataset.csv")  # Replace with actual path
 
 # Update wing status for specific species --------------------------------
-species_to_update <- c("Anthia fabricii", "Calosoma affine", ...)
+species_to_update <- c("Anthia fabricii", "Calosoma affine", "Cicindela formosa", 
+                       "Cicindela patruela", "Cicindela repanda", "Cicindela scutellaris", 
+                       "Cicindela tranquebarica", "Acanthoderes circumflexa", "Acrocinus longimanus", 
+                       "Brasilanus batus", "Dryoctenes scrupulosa", "Eburia sp.", "Macrodontia dejeani", 
+                       "Nyssicus setosus", "Oncideres putator", "Phoracantha recurva", 
+                       "Phoracantha semipunctata", "Stenodontes molaria", "Stenodontes sp.", 
+                       "Taeniotes scalaris", "Trachysomus peregrinus", "Xenambyx laticauda", 
+                       "Coccinellidae sp.", "Hylobius abietis", "Mylabris rufficonis", 
+                       "Popilius sp.", "Rhipiceridae sp.", "Anomala sp.", "Circellium bacchus", 
+                       "Coelosis biloba", "Cyclocephala sp.", "Dyscinetus sp.", "Pachylomerus femoralis", 
+                       "Pachysoma hippocrates", "Pelidnota sp.", "Philerus sp.", "Strategus aloeus", 
+                       "Erodius nanus", "Nyctobates procerus", "Onymacris plana", "Physadesmia globosa", 
+                       "Physosterna cribripes", "Psammodes striatus", "Zophobas sp.")
 
 # Set wing status to 'NW' for selected species
 updated_dataset <- dataset %>%
